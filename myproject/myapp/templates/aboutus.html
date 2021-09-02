@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <hr class="inf"></hr>
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div  class="bg-success me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+          <div class="my-3 py-3">
+            <h2 class="display-5" style="color: white;">專題緣起</h2>
+            <p class="lead"></p>
+          </div>
+          <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 100%; border-radius: 21px 21px 0 0;color: black; font-size: 20px; padding-left: 10px;padding-right: 10px;">
+            <div style="height: 20px"></div>
+            美國因為疫情期間的貸款利率創過去多年來的新低，讓大家紛紛投入買房市場。根據 Redfin有高達 40% 在美國的房子都加價購買，不同城市也有不同的比例，多人搶一房的狀態，屢見不顯，包括高達將近 70% 的房子都面臨至少 20 組人馬的搶房狀態。(換日線) <br>
+            過去一年來，由於住宅供給量追趕不上強勁的需求，美國房價不斷攀升。在COVID-19疫情期間，許多家庭尋求更大的居住空間，搭配上房貸利率落在歷史低點附近，美國房市交易熱絡，不少業主收到多份出價，甚至出現成交價高於開價的情況。<br>
+            標準普爾董事總經理克雷格·拉扎拉 (Craig Lazzara) 在一份聲明中表示，即使全美房屋價格平均上漲了 14.6%，西雅圖的價格上漲速度也快於全國(西雅圖為 20.2%)，並表示「這實際上是標準普爾 CoreLogic Case-Shiller 全國房價指數 30 多年來的最高數值。」(SeattleTimes)
+          </div>
+        </div>
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+          <div class="my-3 p-3">
+            <h2 class="display-5">專題範圍</h2>
+            <p class="lead"></p>
+          </div>
+          <div class="bg-success shadow-sm mx-auto" style="width: 80%; height: 100%; border-radius: 21px 21px 0 0 ; color: white; font-size: 20px; padding-left: 10px;padding-right: 10px;">
+            <div style="height: 20px;"></div>
+            通過大數據分析從各個面向(房廳數、屋齡、坪數、學區、人口數、人口組成、年收入、教育程度、稅收)等去評估對大西雅圖地區(king country)房價影響，能夠在未來購買房屋時，精準預測房價，提供給使用者決策。
+            <div>
+            <img src="{{ url_for('static', filename='123.jpg') }}" width=90% height=100%>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" >
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{{ url_for('static', filename='white.jpg') }}" style="height:450px;width:100%;padding-left: 15px;padding-right: 15px;" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h1 style="font-size:30px; color:rgb(232,255,245,0) ;">.</h1>
+            <img src="{{ url_for('static', filename='smile.png') }}" width="140" height="140">
+            <h1>BDSE19_第三組</h1>
+            <h2 style="font-size:30px; color:rgb(232,255,245,0) ;")>.</h2>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{{ url_for('static', filename='white.jpg') }}" style="height:450px;width:100%;padding-left: 15px;padding-right: 15px;" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>成員簡介</h1>
+            <img src="{{ url_for('static', filename='smile.png') }}" width="140" height="140">
+            <h1>組長 秦忻榆</h1>
+            <h2 style="font-size:30px;" color="black">Hadoop系統架構建置 網路爬蟲 資料蒐集</h2>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{{ url_for('static', filename='white.jpg') }}" style="height:450px;width:100%;padding-left: 15px;padding-right: 15px;" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>成員簡介</h1>
+            <img src="{{ url_for('static', filename='smile.png') }}" width="140" height="140">
+            <h1>組員 林循恩</h1>
+            <h2 style="font-size:30px;" color="black">Hadoop系統架構建置 網路爬蟲 資料探索性分析 機器學習建模</h2>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{{ url_for('static', filename='white.jpg') }}" style="height:450px;width:100%;padding-left: 15px;padding-right: 15px;" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>成員簡介</h1>
+            <img src="{{ url_for('static', filename='smile.png') }}" width="140" height="140">
+            <h1>組員 徐佳芸</h1>
+            <h2 style="font-size:30px;" color="black">Hadoop系統架構建置 網路爬蟲 資料探索性分析 網頁建置</h2>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{{ url_for('static', filename='white.jpg') }}" style="height:450px;width:100%;padding-left: 15px;padding-right: 15px;" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>成員簡介</h1>
+            <img src="{{ url_for('static', filename='smile.png') }}" width="140" height="140">
+            <h1>組員 游敏卉</h1>
+            <h2 style="font-size:30px;" color="black">Hadoop系統架構建置 網路爬蟲 回歸建模</h2>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{{ url_for('static', filename='white.jpg') }}" style="height:450px;width:100%;padding-left: 15px;padding-right: 15px;" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>成員簡介</h1>
+            <img src="{{ url_for('static', filename='smile.png') }}" width="140" height="140">
+            <h1>組員 魏辰儒</h1>
+            <h2 style="font-size:30px;" color="black">Hadoop系統架構建置 網路爬蟲 資料整合分析 機器學習建模</h2>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <hr class="inf"></hr>
+    {% endblock %}

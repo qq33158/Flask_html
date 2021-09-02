@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <hr class="inf"></hr>
+    <div style="float:left;padding-left: 50px;">
+        <h2>房價熱區</h2>
+        <svg></svg>
+    </div>
+    <div style="padding-top: 105px; padding-bottom: 165px;margin: 0 auto;text-align:center;"> 
+    <img src="{{ url_for('static', filename='house1.png') }}" height="180" width="200">
+    <h1>房價預測</h1>
+    <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.model.label(class_='ab') }}{{form.model(class_='form-control')}}
+        </p>
+        <p>
+            {{ form.model1.label(class_='ab') }}{{form.model1(class_='form-control')}}
+        </p>
+        <p>
+            {{ form.model2.label(class_='ab') }}{{form.model2(class_='form-control')}} 
+        </p>
+        <p>
+            {{ form.param.label(class_='ab') }}{{ form.param(class_='form-control') }}(1000sqft=28坪)<br>
+            {% for error in form.param.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        
+        <p>{{ form.submit() }}</p>
+    </form>
+    {% for row in results %}
+        <p class="abc">預測房價價錢：{{ results2 }} price</p>
+        <p class="abc">預測單價：{{ results3 }} price/sqft</p>
+        
+    {% endfor %}
+    </div>
+    <br></br>
+    <hr class="inf"></hr>
+    <script src="{{ url_for('static', filename='map.js') }}"></script>
+{% endblock %}

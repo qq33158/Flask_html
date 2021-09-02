@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <hr class="inf"></hr>
+    <div style="text-align:center; padding-top: 10px;">
+        <form action="" method="post">
+            {{ form.hidden_tag() }}
+            <p>
+                {{ form.model.label(class_='ab') }}{{form.model(class_='form-control')}}<br>
+                {{ form.model1.label(class_='ab') }}{{form.model1(class_='form-control')}}<br>
+                {{ form.model2.label(class_='ab') }}{{form.model2(class_='form-control')}}
+            </p>
+            <p>{{ form.submit() }}</p>
+        </form>
+    <div id="chartContainer2" style="height: 400px; width: 100%;"></div>
+    <hr class="inf"></hr>
+    <div id="chartContainer" style="height: 400px; width: 100%;"></div>
+    <hr class="inf"></hr>
+    <hr class="inf"></hr>
+    </div>
+    <script src="{{ url_for('static', filename='test2.js') }}"></script>
+{% endblock %}

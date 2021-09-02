@@ -1,0 +1,7 @@
+Flask
+flask-wtf
+flask-sqlalchemy
+pymysql
+joblib
+scikit-learn
+xgboost

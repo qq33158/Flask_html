@@ -1,0 +1,252 @@
+html {
+  font-family: sans-serif;
+  background: url(background1.jpg);
+  padding: 3rem;
+}
+
+body {
+/*  max-width: 960px; */
+  height: 100%;
+  margin: 0 auto;
+  background:	rgb(232,255,245,0.7);
+}
+
+/* change font*/
+@font-face{
+  src:url(Yomogi-Regular.ttf);
+  font-family: Yomogi-Regular;
+}
+
+/* change font*/
+@font-face{
+  src:url(Tourney-VariableFont_wdth,wght.ttf);
+  font-family: Tourney-VariableFont;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: serif;
+  color: #000000;
+  margin: 1rem 0;
+  font-family: monospace;
+}
+
+a {
+  margin: 0 auto;
+  color:	#FFFCEC;
+  text-decoration: none;
+  font-family: Tourney-VariableFont;
+  font-size: 30px;
+}
+a:hover {
+  color: #FFFCEC;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid lightgray;
+}
+
+div.ab{
+  width:630px ;
+  height: 80px;
+  background:url(background2.png);
+  text-align:center ;
+  margin: 0 auto ;
+}
+h1.ab{
+  text-align:center;
+  font-weight: bold;
+}
+p.ab{
+  font-weight: 600;
+  font-size: 20px;
+}
+
+hr.inf{
+  display:block;
+  margin: 0 auto ;
+  border:0px;
+  height:12px;
+  background-image:url(Banners.jpg);
+}
+
+nav {
+  background:	rgb(0,96,48,0.8);
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  padding: 0 0.5rem;
+}
+
+nav h1 {
+  flex: auto;
+  margin: 0;
+}
+
+nav h1 a {
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+}
+
+nav ul  {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a, nav ul li span, header .action {
+  display: block;
+  padding: 0.5rem;
+}
+
+.content {
+  padding: 0 1rem 1rem;
+}
+
+.content > header {
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  align-items: flex-end;
+}
+
+.content > header h1 {
+  flex: auto;
+  margin: 1rem 0 0.25rem 0;
+}
+
+.flash {
+  margin: 1em 0;
+  padding: 1em;
+  background: #cae6f6;
+  border: 1px solid #377ba8;
+}
+
+.post > header {
+  display: flex;
+  align-items: flex-end;
+  font-size: 0.85em;
+}
+
+.post > header > div:first-of-type {
+  flex: auto;
+}
+
+.post > header h1 {
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+
+.post .about {
+  color: slategray;
+  font-style: italic;
+}
+
+.post .body {
+  white-space: pre-line;
+}
+
+.content:last-child {
+  margin-bottom: 0;
+}
+
+.content form {
+  margin: 1em 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.content label {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.content input, .content textarea {
+  margin-bottom: 1em;
+}
+
+.content textarea {
+  min-height: 12em;
+  resize: vertical;
+}
+
+input.danger {
+  color: #cc2f2e;
+}
+
+input[type=submit] {
+  align-self: start;
+  min-width: 10em;
+}
+
+.tip {
+  padding: 10px;
+  background: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  font-size: 17px;
+}
+
+path {
+  stroke: white;
+  stroke-width: 1px;
+}
+
+#map {
+  width:54.8%;
+  height:710px;
+  float:left;
+  padding-left:50px;
+}
+svg{
+  width:100%;
+  background: rgba(114, 170, 216, 0.6);
+}
+
+#gm {
+  font-size: 14px;
+  font-weight:800;
+}
+
+#gm1 {
+  font-size: 13px;
+  font-weight:500;
+}
+
+#gm2{
+  color: red;
+}
+#gm3{
+  color: blue;
+}
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+/* rtl:end:ignore */
+.form-control{
+  margin: 0 auto;
+  width: auto;
+  display: inline-block
+}
+
+.ab{
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+.abc{
+  font-size: 30px;
+  font-weight: 800;
+  font-family: monospace;
+}

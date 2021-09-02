@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <hr class="inf"></hr>
+    <div id="map" style="margin-left: 50px;"></div>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=&v=weekly"
+    async
+    ></script>
+    <div style="padding-top: 105px; padding-bottom: 260px;text-align:center;"> 
+    <img src="{{ url_for('static', filename='house1.png') }}" height="180" width="200">
+    <h1>目前預售房價</h1>
+    <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.model.label(class_='ab') }}{{form.model(class_='form-control')}}
+        </p>
+        <p>{{ form.submit() }}</p>
+    </form>
+    </div>
+    <hr class="inf"></hr>
+{% endblock %}
